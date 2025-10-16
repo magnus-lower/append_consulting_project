@@ -205,3 +205,38 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Project-specific ignores (TDT4173) ---
+
+# Data & outputs (keep these out of git)
+data/
+output/
+artifacts/
+models/
+checkpoints/
+runs/
+logs/
+
+# Common large/binary artifacts
+*.pkl
+*.joblib
+*.parquet
+*.feather
+*.h5
+*.onnx
+*.npy
+*.npz
+*.zip
+*.7z
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Kaggle & secrets
+.kaggle/
+kaggle.json
+
+# VS Code local machine settings (optional to ignore)
+# .vscode/
